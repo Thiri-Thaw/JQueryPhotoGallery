@@ -1,6 +1,6 @@
 $( document ).ready( function ()
 {
-    // search function
+    // search
     var current_li;
     $( "#search" ).keyup( function ()
     {

@@ -19,12 +19,12 @@ $( document ).ready( function ()
         // $( "#portfolio li" ).fadeOut();
         if ( category == "all" )
         {
-            $( ".filter" ).show( "1000" );
+            $( ".filter" ).show();
         }
         else
         {
-            $( ".filter" ).not( "." + category ).fadeOut( 50 );
-            $( ".filter" ).filter( "." + category ).fadeIn( 1000 );
+            $( ".filter" ).not( "." + category ).hide();
+            $( ".filter" ).filter( "." + category ).show();
         }
         $( "button" ).click( function ()
         {
