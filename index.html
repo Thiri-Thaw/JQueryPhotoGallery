@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Gallery</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/filter.js"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="menu">
+                <h2>JQuery Photo Gallery</h2>
+                <input id="search" style="float:right" type="text" placeholder="search">
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <div id="frame">
+            <table id="frame-table">
+                <tr>
+                    <td id="left">
+                        <img class="icon" src="images/left.png" alt="left">
+                    </td>
+                    <td id="right">
+                        <img class="icon" src="images/right.png" alt="">
+                    </td>
+                </tr>
+            </table>
+            <img id="main" src="" alt="">
+            <div id="description">
+                <p></p>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="filter">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="nature">Nature</button>
+                <button data-filter="art">Art</button>
+                <!-- <button data-filter="creation">Creation</button> -->
+                <button data-filter="building">Building</button>
+                <button data-filter="flower">Flower</button>
+            </div>
+            <ul id="portfolio">
+                <li data-keywords="beach yellow bus water" class="filter creation "><img id="3" src="images/img3.jpg"
+                        alt=""></li>
+                <li data-keywords=" white house pink green yellow korea" class="filter building "><img id="45"
+                        src="images/img45.jpg" alt=""></li>
+                <li data-keywords="brown wind window sky cloud blue white nature" class="filter creation building "><img
+                        id="39" src="images/img39.jpg" alt=""></li>
+                <li data-keywords="city yellow blue window green red " class="filter building "><img id="19"
+                        src="images/img19.jpg" alt=""></li>
+                <li data-keywords="color paint yellow blue red orange eye nose face green purple" class="filter art ">
+                    <img id="31" src="images/img31.jpg" alt="">
+                </li>
+                <li data-keywords="color paint brush red blue yellow green cup plastic" class="filter art creation ">
+                    <img id="41" src="images/img41.jpg" alt="">
+                </li>
+                <li data-keywords="building city" class="filter building "><img id="10" src="images/img10.jpg" alt="">
+                </li>
+                <li data-keywords="forest tree green" class="filter nature "><img id="8" src="images/img8.jpg" alt="">
+                </li>
+                <li data-keywords="piano music black white" class="filter art creation "><img id="12"
+                        src="images/img12.jpg" alt=""></li>
+                <li data-keywords="white plant pot orange green yellow ceramics" class="filter flower creation "><img
+                        id="17" src="images/img17.jpg" alt=""></li>
+                <li data-keywords="city light car traffic road orange" class="filter building "><img id="18"
+                        src="images/img18.jpg" alt=""></li>
+                <li data-keywords="plant green hand paint" class="filter art "><img id="21" src="images/img21.jpg"
+                        alt=""></li>
+                <li data-keywords="yellow rose flower" class="filter flower "><img id="42" src="images/img42.jpg"
+                        alt=""></li>
+                <li data-keywords="car bus ocean blue sky water" class="filter nature art "><img id="26"
+                        src="images/img26.jpg" alt=""></li>
+                <li data-keywords="agriculture green  green" class="filter nature "><img id="7" src="images/img7.jpg"
+                        alt=""></li>
+                <li data-keywords=" purple tree water" class="filter art nature "><img id="6" src="images/img6.jpg"
+                        alt=""></li>
+                <li data-keywords="light yellow" class="filter creation "><img id="4" src="images/img4.jpg" alt=""></li>
+                <li data-keywords="boat black white" class="filter nature art "><img id="1" src="images/img1.jpg"
+                        alt=""> </li>
+                <li data-keywords="bridge black white water" class="filter nature "><img id="2" src="images/img2.jpg"
+                        alt=""> </li>
+                <li data-keywords="beach coconut water tree" class="filter nature "><img id="9" src="images/img9.jpg"
+                        alt="">
+                </li>
+                <li data-keywords="beach sand sky cloud white brown orange water" class="filter nature art "><img
+                        id="27" src="images/img27.jpg" alt=""></li>
+                <li data-keywords="ball glass transparent tree brown ball " class="filter creation nature "><img id="28"
+                        src="images/img28.jpg" alt=""></li>
+                <li data-keywords=" house water mountain tree cloud sky green window brown" class="filter nature "><img
+                        id="29" src="images/img29.jpg" alt=""></li>
+                <li data-keywords="bagan pagoda myanmar yellow brown" class="filter nature "><img id="11"
+                        src="images/img11.jpg" alt=""></li>
+                <li data-keywords="white green yellow pink plant blue city" class="filter building flower "><img id="16"
+                        src="images/img16.jpg" alt="">
+                </li>
+                <li data-keywords="color red blue light yellow brown bulb circle" class="filter art building "><img
+                        id="30" src="images/img30.jpg" alt="">
+                </li>
+                <li data-keywords="myanmar buffalo cow sunset black orange" class="filter nature "><img id="20"
+                        src="images/img20.jpg" alt="">
+                </li>
+                <li data-keywords="color paint red yellow blue orange green" class="filter art "><img id="32"
+                        src="images/img32.jpg" alt="">
+                </li>
+                <li data-keywords=" flower color brown yellow daisy" class="filter flower "><img id="33"
+                        src="images/img33.jpg" alt=""></li>
+                <li data-keywords=" paint color wood brown eye face" class="filter art creation "><img id="34"
+                        src="images/img34.jpg" alt="">
+                </li>
+                <li data-keywords=" rose flower pot orange white pink" class="filter flower creation "><img id="35"
+                        src="images/img35.jpg" alt=""></li>
+                <li data-keywords=" balloon color yellow light green purple red blue" class="filter art creation "><img
+                        id="36" src="images/img36.jpg" alt=""></li>
+                <li data-keywords="green pink flower lotus " class="filter flower "><img id="41" src="images/img40.jpg"
+                        alt="">
+                </li>
+                <li data-keywords="myanmar burma kayan brown dog animal woman rice sand" class="filter nature "><img
+                        id="37" src="images/img37.jpg" alt=""></li>
+                <li data-keywords="myanmar burma kayan two woman brown wall pumpkin smile" class="filter nature "><img
+                        id="38" src="images/img38.jpg" alt=""></li>
+                <li data-keywords="innlay myanmar burma water sunset boat leg " class="filter nature "><img id="43"
+                        src="images/img43.jpg" alt=""></li>
+                <li data-keywords="sunflower yellow green" class="filter flower "><img id="44" src="images/img44.jpg"
+                        alt=""></li>
+                <li data-keywords="snow ball yellow" class="filter creation "><img id="5" src="images/img5.jpg" alt="">
+                </li>
+                <li data-keywords="beach resort water cloud blue brown white sky" class="filter nature "><img id="24"
+                        src="images/img24.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+
+    </body>
+
+</html>

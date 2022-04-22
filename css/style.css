@@ -1,0 +1,117 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    width:100%;
+    height:56px;
+    background-color: black; 
+    padding:10px;   
+}
+#menu{
+    color:rgb(12, 11, 11);
+    width:1024px;
+    margin:0px auto;
+}
+h2{
+    margin:0px;
+    color:white;
+    padding-top:10px;
+}
+#wrapper{
+    width: 1024px;
+    min-height: 500px;
+    margin:0px auto;
+}
+
+#portfolio{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#portfolio li{
+    display:inline-block;
+    margin:10px 5px 10px 5px;
+}
+#portfolio li img{
+    width:240px;
+    height:165px;
+}
+#portfolio li img:hover{
+    cursor:pointer;
+}
+#overlay:hover{
+    cursor:pointer;
+}
+#main:hover{
+    cursor:pointer;
+}
+#frame{
+    display: none;
+    position:fixed;
+    left: 50%;
+    background-color: white;
+    width:700px;
+    height:500px;
+    margin-left: -350px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top: 15px;
+   
+}
+#main{
+    width:700px;
+    height:500px;
+
+}
+#overlay{
+    display:none;
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color: black;
+    opacity:0.7 ;
+}
+#frame-table{
+    position:absolute;
+    width:700px;
+    margin-left:20px; 
+    padding:20px;
+
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    margin:0px;
+}
+
+#right{
+    float: right;
+    left:25px;
+}
+#left{
+    right:65px;
+}
+
+#right,#left{
+    position:relative;
+    top:200px;
+    opacity:0.4;
+    
+}
+#description{
+    background-color: white;
+}
+#filter{
+    padding:10px;
+}
+ .active{
+   background-color: white;
+   font-size: 30px;
+}
+button{
+    border-color: gray(34, 180, 190);
+}
